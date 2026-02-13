@@ -112,7 +112,7 @@
     </section>
 
     <!-- word container -->
-    <section id="word-container" class="bg-gray-100 p-10 my-10 w-11/12 mx-auto grid grid-cols-3 gap-5 rounded-lg">
+    <section id="word-container" class="bg-gray-100 p-2 md:p-10 my-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-5 rounded-lg">
     
     <!-- by default will be displayed -->
     <div class="bg-sky-100 text-center col-span-full py-5 rounded-lg space-y-4">
@@ -121,6 +121,24 @@
     </div>
     
     </section>
+
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="space-y-5">
+                                
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- modal ends-->
 
     <!-- js -->
     <script src="./script/index.js"></script>
